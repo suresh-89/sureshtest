@@ -1,0 +1,28 @@
+.e-subject-container {
+    width: 100% !important;
+}
+
+/* Removing timezone from editor */
+.e-time-zone-container {
+    display: none !important;
+}
+
+.e-time-zone-row {
+    display: none !important;
+}
+
+.custom-field-row {
+    margin-bottom: 10px;
+}
+
+.e-dlg-container {
+    z-index: 1040 !important;
+}
+
+.e-past-app {
+    background-color: var(--warning) !important;
+}
+
+.e-quick-dialog-occurrence-event {
+    display: none !important;
+}
