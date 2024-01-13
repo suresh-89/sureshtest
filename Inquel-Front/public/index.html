@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#621012" />
+        <meta name="description" content="IQ Labs Academy" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/Iq-labs-01.svg" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="%PUBLIC_URL%/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="%PUBLIC_URL%/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="%PUBLIC_URL%/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+        <title>IQ Labs Academy</title>
+
+        <!-- MathJax library to render MathML in HTML -->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+        ></script>
+    </head>
+
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+
+        <!-- Razorpay client js -->
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+        <!-- Disable react devtool on production -->
+        <script>
+            const env = "%NODE_ENV%";
+            if (
+                env === "production" &&
+                typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === "object"
+            ) {
+                window.__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function () {};
+            }
+        </script>
+    </body>
+</html>
